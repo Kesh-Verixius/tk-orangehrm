@@ -30,9 +30,14 @@ export function addEmployee() {
   cy.contains('New Employee FN New Employee LN');
 };
 
+export function updateEmployee(employeeId) {
+
+};
+
 export function deleteEmployee(employeeId) {
   cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList');
   cy.get('.oxd-input.oxd-input--active').eq(1).type(`${employeeId}{enter}`);
-  cy.get('[class="oxd-icon bi-trash"]').filter(':visible').click();
+  cy.get('[class="oxd-icon bi-trash"]').eq(1).click();
+  cy.get('[class="oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin"]').click();
   cy.contains('Successfully Deleted');
 };

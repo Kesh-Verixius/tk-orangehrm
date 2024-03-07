@@ -9,7 +9,10 @@ describe('Add Employee tests', () => {
   });
 
   it('Creates a new Employee', () => {
+    // Create a new Employee
     //addEmployee();
+
+    // Clean up test data by deleting creating Employee
     deleteEmployee('1234');
   })
 })
