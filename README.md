@@ -51,3 +51,12 @@ npx cypress run
 ```
 
 Cypress will execute all tests in headless mode and generate reports.
+
+# Future Enhancements
+
+Below are a list of enhancements I would like to make to the suite, given the time:
+* Handle text fields more elegantly
+  * Text fields on certain pages modify their class using "active" and "focus". This can cause issues when selecting a specific text field by their class since their class names (and therefore index) change depending on whether or not the cursor is in the text field. Ideally, I'd have a better way of selecting between text fields besides index.
+
+* Integrate CI into the suite
+  * I think I'd misheard when talking to Johnny about your CI solution and had written down "Bucket CI", which doesn't seem to be a thing. If I had more time, I would've used BitBucket instead of GitHub, as I'm sure that's what he said in retrospect.
