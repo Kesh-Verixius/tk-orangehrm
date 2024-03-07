@@ -8,5 +8,5 @@ export function login() {
   cy.get('[type="submit"]').click();
 
   // Assert the Dashboard page is displayed
-  cy.contains('Dashboard');
+  cy.url().should('include', '/dashboard/index');
 };
