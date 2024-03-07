@@ -6,9 +6,17 @@ This repository contains the test suite made by Tristin Knapp for the technical 
 
 This repository contains Cypress tests written in JavaScript.
 
-## Prerequisites
+## Repo Cloning via Docker
 
-Before you begin, ensure you have met the following requirements:
+If you're using Docker, pull down the Docker image using the following command:
+
+```bash
+docker pull keshverixius/tk-orangehrm
+```
+
+## Repo Cloning via Git Prerequisites
+
+If you're using Git, ensure you have met the following requirements before you begin:
 
 - [Node.js](https://nodejs.org/) installed on your machine.
 - [Git](https://git-scm.com/) installed on your machine.
