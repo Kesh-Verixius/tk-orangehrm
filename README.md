@@ -60,3 +60,6 @@ Below are a list of enhancements I would like to make to the suite, given the ti
 
 * Integrate CI into the suite
   * I think I'd misheard when talking to Johnny about your CI solution and had written down "Bucket CI", which doesn't seem to be a thing. If I had more time, I would've used BitBucket instead of GitHub, as I'm sure that's what he said in retrospect.
+ 
+* Handle localization
+  * After a few iterations, it became clear that it wasn't only the UI that was changing, but the language as well. This began to cause issues for my .contains since they were only expecting English words. If I had more time, I'd like to implement some method of translating/handling all different languages (which seems like a pretty untenable solution), or, more likely, a way to consistently locate elements/components throughout the application by location or index, so as to not rely on a given element's/component's text.
